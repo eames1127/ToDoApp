@@ -1,0 +1,96 @@
+html{
+    overflow:hidden;
+}
+
+body{
+ height: 100vh;
+ width: 100%;
+ overflow: hidden;
+}
+
+header{
+    background-color: #3298dc;
+    color: #ffffff;
+    text-align: center;
+    font-size: 60px;
+    font-style: italic;
+}
+
+section{
+    width: 100%;
+    max-height: 35%;
+    overflow: auto;
+}
+.completedTitle{
+    background-color: #dcfaea;
+    width: 100%;
+}
+
+.completedTitle h2{
+    display: inline-block;
+}
+
+.todoTitle{
+    background-color: #dcf3fa;
+    width: 100%;
+}
+
+h2{
+    font-size: xx-large;
+    font-style: oblique;
+}
+
+.todoList .completeList{
+    padding: 0px;
+    margin: 0px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+#completeList{
+    border-style: solid;
+    border-color: #dcfaea;
+}
+
+#todoList{
+    border-style: solid;
+    border-color: #dcf3fa;
+}
+
+li{
+    font-size: 30px;
+    background-color: #dcf3fa;
+    text-align: center;
+    padding: 20px;
+}
+
+.todoItem{
+    background-color: #dcf3fa;
+}
+
+.item{
+    background-color: #dcfaea;
+}
+
+input[type]{
+    font-size: 24px;
+    width: 120px;
+}
+
+input[type = checkbox] {
+    visibility: hidden;
+}
+
+input[type = text] {
+    width: 60%;
+    font-size: 24px;
+}
+
+li:nth-child(odd) {
+    background: #ffffff;
+}
+
+#newTask{
+    width: 100%;
+    display: flexbox;
+}

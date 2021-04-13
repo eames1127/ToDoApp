@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+ <html lang="en">
+    <head>
+        <meta charset='utf-8'>
+        <title>Family Todo List</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"/>
+        <link rel="stylesheet" type="text/css" href="/css/stylesheet.css"/>
+        <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script defer src='./JQuery/main.js'></script>
+    </head>
+    <body>
+        <header>
+            <h1 class = "titleHeader">Eames Todo list</h1>
+        </header>
+        <br />
+        <div id = "newTask">
+            <input id = "taskDetail" class = "input is-info" type = "text" placeholder = "Enter new task e.g. Wash the car">
+            <input id = "addTask" class = "button is-light is-rounded" type = "button" value = "Add Task">
+        </div>
+        <br />
+        <div class="todoTitle">
+            <h2>Todo.</h2>
+        </div>
+        <section>
+            <div id = "todoList"> 
+                <ul id = "existingItems">
+                    <li class = "todoItem">Test item <input type = "checkbox"></li>
+                </ul>
+            </div>
+        </section>
+        <br />
+        <div class="completedTitle">
+            <h2 > Compelted task(s).</h2>
+            <input id = "clearTasks" class = "button is-light is-rounded" type = "button" value="Clear"> 
+        </div>
+        <section>
+            <div id = "completeList">
+                <ul id = "completedItems">
+                    <li class = "item">Test item <input type = "checkbox" checked = "true"></li>
+                </ul>
+            </div>
+        </section>
+    </body>
+</html>
