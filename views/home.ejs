@@ -18,27 +18,8 @@
             <input id = "addTask" class = "button is-light is-rounded" type = "button" value = "Add Task">
         </div>
         <br />
-        <div class="todoTitle">
-            <h2>Todo.</h2>
-        </div>
-        <section>
-            <div id = "todoList"> 
-                <ul id = "existingItems">
-                    <li class = "todoItem">Test item <input type = "checkbox"></li>
-                </ul>
-            </div>
-        </section>
+        <%- include('./partials/TodoItem'); %>
         <br />
-        <div class="completedTitle">
-            <h2 > Compelted task(s).</h2>
-            <input id = "clearTasks" class = "button is-light is-rounded" type = "button" value="Clear"> 
-        </div>
-        <section>
-            <div id = "completeList">
-                <ul id = "completedItems">
-                    <li class = "item">Test item <input type = "checkbox" checked = "true"></li>
-                </ul>
-            </div>
-        </section>
+        <%- include('./partials/CompletedTasks'); %>
     </body>
 </html>
