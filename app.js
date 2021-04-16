@@ -1,4 +1,5 @@
 const express = require("express");
+const database = require("./database");
 app = express();
 
 var path = require('path')
@@ -14,4 +15,3 @@ const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
  console.log(`Listening on port : ${PORT}`)
 });
- 
