@@ -4,7 +4,11 @@
 <section>
     <div id = "todoList"> 
         <ul id = "existingItems">
-            <li class = "todoItem">Test item <input type = "checkbox"></li>
+            <% tasks.forEach(function(task) { %>
+            <li class = "todoItem" id ="<%= task._id %>">
+                <%= task.Description %>
+                <input type = "checkbox"></li>
+            <% }); %>
         </ul>
     </div>
 </section>

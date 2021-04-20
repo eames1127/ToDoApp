@@ -1,5 +1,4 @@
 const express = require("express");
-const database = require("./database");
 app = express();
 
 var path = require('path')
@@ -7,8 +6,7 @@ var path = require('path')
 require("dotenv").config();
 app.set ("view engine", "ejs");
 app.use(express.static(path.join(__dirname, 'public')));
-app.use("/", require("./Routes/index"));
-
+app.use("/", require("./routes/index"));
 
 const PORT = process.env.PORT || 8080;
 
