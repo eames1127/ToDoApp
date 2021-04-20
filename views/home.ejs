@@ -18,7 +18,7 @@
             <input id = "addTask" class = "button is-light is-rounded" type = "button" value = "Add Task">
         </div>
         <br />
-        <%- include('./partials/TodoItem'); %>
+        <%- include('./partials/TodoItem', {tasks}); %>
         <br />
         <%- include('./partials/CompletedTasks'); %>
     </body>
