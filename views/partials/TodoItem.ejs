@@ -4,11 +4,13 @@
 <section>
     <div id = "todoList"> 
         <ul id = "existingItems">
-            <% tasks.forEach(function(task) { %>
-            <li class = "todoItem" id ="<%= task._id %>">
-                <%= task.Description %>
-                <input type = "checkbox"></li>
-            <% }); %>
+            <% tasks.forEach(function(task) { 
+            if (task.Complete === 0){ %>
+                <li class = "todoItem" id ="<%= task._id %>">
+                    <%= task.Description %>
+                    <input type = "checkbox"></li>
+            <% }
+            }); %>
         </ul>
     </div>
 </section>
