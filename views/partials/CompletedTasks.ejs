@@ -4,6 +4,7 @@
 </div>
 <section>
     <div id = "completeList">
+        <% if (typeof(tasks) !== "undefined"){ %>
         <ul id = "completedItems">
             <% tasks.forEach(function(task) { 
                 if (task.Complete === 1){ %>
@@ -13,5 +14,6 @@
                 <% }
             }); %>
         </ul>
+        <%}%>
     </div>
 </section>
