@@ -3,14 +3,19 @@
 </div>
 <section>
     <div id = "todoList"> 
-        <ul id = "existingItems">
-            <% tasks.forEach(function(task) { 
-            if (task.Complete === 0){ %>
-                <li class = "todoItem" id ="<%= task._id %>">
-                    <%= task.Description %>
-                    <input type = "checkbox"></li>
-            <% }
-            }); %>
-        </ul>
+        <% console.log(typeof(tasks)) 
+        if (typeof(tasks) !== "undefined"){ %>
+            <ul id = "existingItems">
+                <% tasks.forEach(function(task) { 
+                if (task.Complete === 0){ %>
+                    <li class = "todoItem" id ="<%= task._id %>">
+                        <%= task.Description %>
+                        <input type = "checkbox"></li>
+                <% }
+                });%> 
+            </ul>
+        <%}else{%>
+            <h3>Congratulations you currently have no outstanding tasks!</h3>
+        <%}%>
     </div>
 </section>
