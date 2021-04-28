@@ -1,10 +1,12 @@
 
 $("#addTask").on('click', function(){
     var task = $("#taskDetail").val();
-    if(task !== "")
+    if(task === "")
     {
-        $("#existingItems").append(`<li class = "todoItem"> ${task} <input type = "checkbox"></li>`);
+        alert("Please enter a task name.");
+        return;
     }
+    $("#existingItems").append(`<li class = "todoItem"> ${task} <input type = "checkbox"></li>`);
 });
 
 $("#clearTasks").on('click', function(){
